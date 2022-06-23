@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href="style.css" rel="stylesheet" />  
+        <title>Oxipress | Soluções em aços</title>
+    </head>
+    <body>
+        <header>
+            <div class="center">
+                <div class="logo"><img src="../../assets/logo.png" alt="Logo Oxipress" /></div><!--logo-->
+                <div class="menu">
+                    <a href="../../index.html">Home</a>
+                    <a href="../company/index.html">Saiba mais</a>
+                    <a href="../contact/index.html">Contato</a>
+                </div><!--menu-->
+            </div><!--center-->
+        </header>
+        <section class="sobre">
+            <div class="extras">
+                <img class="img-extras" src="../../assets/img2.png" alt="negocios" />
+            </div>
+        </section>
+        <section class="container">
+            <div class="titulo-container">
+                <h1>Conheça os principais <span style="color: orangered;">Clientes OXIPRESS</span></h1>
+            </div><!--titulo-container-->
+            <center>
+                <div class="imagens">
+                    <img class="mySlides" src="../../assets/img-siemens-energy.png" alt="img-siemens-energy" />
+                    <img class="mySlides" src="../../assets/img-ge-power.png" alt="img-ge-power" />
+                    <img class="mySlides" src="../../assets/img-hitachi-abb.png" alt="img-hitachi-abb" />
+                    <img class="mySlides" src="../../assets/img-weg.png" alt="img-weg" />
+                    <img class="mySlides" src="../../assets/img-senco.png" alt="img-senco" />
+                </div><!--imagens-->
+            </center>
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); 
+                }
+            </script>
+            <div class="texto-sobre">
+                <div class="txt">
+                    <p>
+                        Venha fazer história juntamente conosco!<br>Grandes empresas como
+                        <a href="https://www.siemens-energy.com/br/pt.html" target="_blank"><span style="color: orangered; font-weight: bold;" >Siemens Energy</span></a>,
+                        <a href="https://www.ge.com/power" target="_blank"><span style="color: orangered; font-weight: bold;" >GE Power</span></a>,
+                        <a href="https://www.hitachienergy.com/br/pt" target="_blank"><span style="color: orangered; font-weight: bold;" >Hitachi ABB</span></a>,
+                        <a href="https://www.weg.net/institutional/BR/pt/" target="_blank"><span style="color: orangered; font-weight: bold;" >Weg S.A.</span></a> e
+                        <a href="https://www.senco.com/" target="_blank"><span style="color: orangered; font-weight: bold;" >Senco</span></a>
+                        solicitam nossos serviços, e sempre saem mais que satisfeitos com os resultados que entregamos ao término de cada projeto! Pois, temos por cultura, suprir todos os requisitos do cliente com toda eficiência e eficácia em nosso trabalho. Sendo sempre interessado na melhor qualidade para proporcionar o serviço impecavél aos clientes.<br><span style="font-weight: bold;">ENTRE EM CONTATO COM A <span style="color: orangered;">OXIPRESS</span>!</span>
+                    </p>
+
+                </div>
+            </div>
+        </section><!--container-->
+        <footer class="final">
+            <div class="texto-final">
+                <p>©2022 <b>Oxipress</b> - Todos os direitos reservados | Designed by <a style="text-decoration: none;" href="https://wa.me/5519989680054" target="_blank"><span style="font-weight: bold; color: white" >Gabriel Souza</span></a></p>
+            </div><!--texto-final-->
+        </footer>
+    </body>
+</html>
