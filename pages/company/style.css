@@ -15,7 +15,7 @@
 
 html,body{
     height: 100%;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
     overflow-x: hidden;
 }
 
@@ -50,7 +50,6 @@ header{
 }
 
 footer.final{
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -58,4 +57,49 @@ footer.final{
     color: white;
     text-align: center;
     padding: 10px 2%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* ---- */
+
+.column {
+    float: left;
+    width: 32.75%;
+    padding: 5px;
+    height: 300px;
+    margin: 5px;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 15px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ 
+@media screen and (max-width: 1280px) {
+    .column {
+      width: 100%;
+    }
+}
+
+.icon{
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    margin: auto;
+    border-style: solid;
+    border-color: orangered;
+    border-radius: 50px;
+    margin-top: -5%;
+    background-color: white;
 }
